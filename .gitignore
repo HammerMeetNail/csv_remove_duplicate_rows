@@ -128,5 +128,8 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+# Apple
+.DS_Store
+
 # Input and Output Data
 *.csv

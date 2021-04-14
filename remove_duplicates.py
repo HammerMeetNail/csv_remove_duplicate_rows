@@ -106,10 +106,11 @@ def write_output_csv(output_csv_path, data, csv_type):
 
     # Open a second output file and write only unique rows
     with open(output_csv_path, "w", newline="") as csv_file:
+        writer = csv.writer(csv_file, delimiter="\t")
 
         # First row, header
         if csv_type == "diff":
-            writer = csv.writer(csv_file, delimiter=",")
+            
             header = [
                 "'ID'",
                 "'chromosome_name'",
@@ -127,7 +128,6 @@ def write_output_csv(output_csv_path, data, csv_type):
 
                 count += 1
         else:
-            writer = csv.writer(csv_file, delimiter="\t")
             # Prepend a unique id and write to csv
             for key, value in data.items():
                 writer.writerow(value)

@@ -3,7 +3,8 @@ Remove duplicate rows from a CSV file. Creates a new tab delmited CSV.
 
 # Prequisites
 1. [Python 3](https://www.python.org/downloads/)
-2. CSV file with the following columns, including single quotes:
+2. CSV file 
+  * Differential Coordinates columns, including single quotes:
     * 'ID'
     * 'chromosome_name'
     * 'start_position'
@@ -11,6 +12,9 @@ Remove duplicate rows from a CSV file. Creates a new tab delmited CSV.
     * 'strand'
     * 'padj'
     * 'log2FoldChange'
+  * Coordinates, no header, single column, tab delmited string
+    * "some\tfancy\tdata"
+    
 
 # Quickstart
 ```

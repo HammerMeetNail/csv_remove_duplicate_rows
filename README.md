@@ -1,5 +1,5 @@
 # csv_remove_duplicate_rows
-Remove duplicate rows from a CSV file
+Remove duplicate rows from a CSV file. Creates a new tab delmited CSV.
 
 # Prequisites
 1. [Python 3](https://www.python.org/downloads/)
